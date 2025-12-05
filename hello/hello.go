@@ -1,19 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"log"
-
-	"example.com/greetings"
-)
+import "fmt"
 
 func main() {
-	log.SetPrefix("greetings log :")
-	log.SetFlags(0)
+	var age int = 20
+	var name string = "Dayvid"
+	var isStudent bool = true
 
-	message, err := greetings.Hello("Dayviddddd")
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(message)
+
+	fmt.Println("Name:", name)
+	fmt.Println("age", age)
+	fmt.Println("Is Student?", isStudent)
+
 }
