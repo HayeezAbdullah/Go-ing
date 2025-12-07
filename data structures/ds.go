@@ -3,15 +3,21 @@ package main
 import "fmt"
 
 func main() {
-	var numbers [3]int
+	pizza := []string {"cheese", "chicken", "veggie"}
 
-	numbers[0] = 1
-	numbers[1] = 3
-	numbers[2] = 98
+	fmt.Println("length: ", len(pizza))
+	fmt.Println("capacity: ", cap(pizza))
 
-	fmt.Println("Loop starts...")
-	for i := 0; i < len(numbers); i++{
-		fmt.Println(numbers[i])
-	}
+	pizza = append(pizza, "bbq")
 
+	fmt.Println(pizza)
+	fmt.Println("length: ", len(pizza))
+	fmt.Println("capacity: ", cap(pizza))
+	pizza = append(pizza, "beef")
+	pizza = append(pizza, "mutton")
+	pizza = append(pizza, "prawns")
+
+	fmt.Println(pizza)
+	fmt.Println("length: ", len(pizza))
+	fmt.Println("capacity: ", cap(pizza))
 }
