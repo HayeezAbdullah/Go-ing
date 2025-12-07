@@ -3,21 +3,21 @@ package main
 import "fmt"
 
 func main() {
-	pizza := []string {"cheese", "chicken", "veggie"}
+	superPizza := []string {"cheese", "chicken", "veggie","bbq", "mutton", "beef", "prawns"}
+	normalPizza := superPizza[0:4]
 
-	fmt.Println("length: ", len(pizza))
-	fmt.Println("capacity: ", cap(pizza))
+	fmt.Println("BEFORE CHANGE")
+	fmt.Println("Super Pizza: ", superPizza)
+	fmt.Println("Normal Pizza: ", normalPizza)
+	fmt.Println(".........................")
 
-	pizza = append(pizza, "bbq")
+	normalPizza = append(normalPizza, "tandoori", "masala")
 
-	fmt.Println(pizza)
-	fmt.Println("length: ", len(pizza))
-	fmt.Println("capacity: ", cap(pizza))
-	pizza = append(pizza, "beef")
-	pizza = append(pizza, "mutton")
-	pizza = append(pizza, "prawns")
+	fmt.Println("AFTER CHANGE")
+	fmt.Println("Super Pizza: ", superPizza)
+	fmt.Println("Normal Pizza: ", normalPizza)
+	fmt.Println(".........................")
 
-	fmt.Println(pizza)
-	fmt.Println("length: ", len(pizza))
-	fmt.Println("capacity: ", cap(pizza))
+	
+	
 }
